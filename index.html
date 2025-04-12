@@ -182,16 +182,16 @@
     <!-- Hero Section -->
     <section id="home" class="jasmine-bg min-h-screen flex items-center justify-center relative pt-20 pb-16 px-6">
         <!-- Jasmine Flower Decorations -->
-        <img src="3.png"
+        <img src="assets/3.png"
             alt="Jasmine flower"
             class="jasmine floating absolute top-20 left-10 w-48 h-48 opacity-25" />
-        <img src="3.png"
+        <img src="assets/3.png"
             alt="Jasmine flower"
             class="jasmine floating-delay-1 absolute bottom-20 right-10 w-48 h-48 opacity-25" />
-        <img src="large.png"
+        <img src="assets/large.png"
             alt="Jasmine flower"
             class="jasmine floating-delay-2 absolute top-40 right-1/4 w-32 h-32 opacity-25" />
-        <img src="large.png"
+        <img src="assets/large.png"
             alt="Jasmine flower"
             class="jasmine floating-delay-1 absolute bottom-10 left-20 w-32 h-32 opacity-25" />
 
@@ -211,7 +211,7 @@
         <div class="container mx-auto text-center z-10 relative">
             <!-- Logo -->
             <div class="mx-auto mb-8 w-40 h-40 relative">
-                <img src="logo-cuna.png" alt="Carleton Natyam Logo" class="w-full h-full object-contain"> <!--Added this line-->
+                <img src="assets/logo-cuna.png" alt="Carleton Natyam Logo" class="w-full h-full object-contain"> <!--Added this line-->
                 <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                     <circle cx="50" cy="50" r="45" fill="none" stroke="#E7C793" stroke-width="2"></circle>
                     <path d="M50,20 C60,30 70,20 70,10 C70,20 80,30 90,30 C80,30 70,40 70,50 C70,40 60,30 50,20 Z M50,20 C40,30 30,20 30,10 C30,20 20,30 10,30 C20,30 30,40 30,50 C30,40 40,30 50,20 Z M50,20 C50,10 50,0 50,0 C50,0 50,10 50,20 Z M50,20 C50,30 50,40 50,50 C50,60 60,70 70,70 C60,70 50,80 50,90 C50,80 40,70 30,70 C40,70 50,60 50,50 Z" fill="#E7C793"></path>
@@ -381,73 +381,115 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <!-- Team Member 1 -->
-                <div class="team-member text-center">
-                    <div class="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full border-2 border-[#E7C793]">
-                        <div class="w-full h-full bg-[#E7C793]/20 flex items-center justify-center">
-                            <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#E7C793" stroke-width="1.5"></path>
-                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="#E7C793" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                <div class="team-member text-center group [perspective:1000px]">
+                    <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  
+                      <!-- FRONT -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+                            <img src="" alt="Divya" class="w-full h-full object-cover" />
+                        </div>                          
+                        <h3 class="text-2xl font-bold text-[#E7C793]">Divya Vithiyatharan</h3>
+                        <p class="text-[#E7C793]/80 mt-1 text-sm">Co-President (Co-Founder) + Dance Instructor</p>
+                      </div>
+                  
+                      <!-- BACK -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <h4 class="font-semibold text-xl mb-3">Soft Eng</h4>
+                        <p class="text-base text-center">Obsessed with classical dance & UI design magic!</p>
+                      </div>
+                      
                     </div>
-                    <h3 class="text-xl font-bold">Divya Vithiyatharan</h3>
-                    <p class="text-[#E7C793]/80">Co-President (Co-Founder) + Dance Instructor</p>
                 </div>
                 
                 <!-- Team Member 2 -->
-                <div class="team-member text-center">
-                    <div class="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full border-2 border-[#E7C793]">
-                        <div class="w-full h-full bg-[#E7C793]/20 flex items-center justify-center">
-                            <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#E7C793" stroke-width="1.5"></path>
-                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="#E7C793" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                <div class="team-member text-center group [perspective:1000px]">
+                    <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  
+                      <!-- FRONT -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+                            <img src="assets/1.jpg" alt="Anjali Patel" class="w-full h-full object-cover" />
+                        </div>                          
+                        <h3 class="text-2xl font-bold text-[#E7C793]">Anjali Patel</h3>
+                        <p class="text-[#E7C793]/80 mt-1 text-sm">Co-President (Co-Founder) + Dance Instructor</p>
+                      </div>
+                  
+                      <!-- BACK -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <h4 class="font-semibold text-xl mb-3">Computer Science & Incoming MBA Candidate</h4>
+                        <p class="text-base text-center">Obsessed with classical dance & UI design magic!</p>
+                      </div>
+                      
                     </div>
-                    <h3 class="text-xl font-bold">Anjali Patel</h3>
-                    <p class="text-[#E7C793]/80">Co-President (Co-Founder) + Dance Instructor</p>
                 </div>
+                  
+                  
                 
                 <!-- Team Member 3 -->
-                <div class="team-member text-center">
-                    <div class="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full border-2 border-[#E7C793]">
-                        <div class="w-full h-full bg-[#E7C793]/20 flex items-center justify-center">
-                            <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#E7C793" stroke-width="1.5"></path>
-                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="#E7C793" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                <div class="team-member text-center group [perspective:1000px]">
+                    <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  
+                      <!-- FRONT -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+                            <img src="" alt="Divya" class="w-full h-full object-cover" />
+                        </div>                          
+                        <h3 class="text-2xl font-bold text-[#E7C793]">Anirudh</h3>
+                        <p class="text-[#E7C793]/80 mt-1 text-sm">VP Finance</p>
+                      </div>
+                  
+                      <!-- BACK -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <h4 class="font-semibold text-xl mb-3">Soft Eng</h4>
+                        <p class="text-base text-center">Obsessed with classical dance & UI design magic!</p>
+                      </div>
+                      
                     </div>
-                    <h3 class="text-xl font-bold">Anirudh Mahesh</h3>
-                    <p class="text-[#E7C793]/80">VP Finance</p>
                 </div>
                 
                 <!-- Team Member 4 -->
-                <div class="team-member text-center">
-                    <div class="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full border-2 border-[#E7C793]">
-                        <div class="w-full h-full bg-[#E7C793]/20 flex items-center justify-center">
-                            <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#E7C793" stroke-width="1.5"></path>
-                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="#E7C793" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                <div class="team-member text-center group [perspective:1000px]">
+                    <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  
+                      <!-- FRONT -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+                            <img src="" alt="Divya" class="w-full h-full object-cover" />
+                        </div>                          
+                        <h3 class="text-2xl font-bold text-[#E7C793]">Arun</h3>
+                        <p class="text-[#E7C793]/80 mt-1 text-sm">VP Events</p>
+                      </div>
+                  
+                      <!-- BACK -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <h4 class="font-semibold text-xl mb-3">Soft Eng</h4>
+                        <p class="text-base text-center">Obsessed with classical dance & UI design magic!</p>
+                      </div>
+                      
                     </div>
-                    <h3 class="text-xl font-bold">Arun </h3>
-                    <p class="text-[#E7C793]/80">VP Events</p>
                 </div>
 
                 <!-- Team Member 5 -->
-                <div class="team-member text-center">
-                    <div class="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full border-2 border-[#E7C793]">
-                        <div class="w-full h-full bg-[#E7C793]/20 flex items-center justify-center">
-                            <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#E7C793" stroke-width="1.5"></path>
-                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="#E7C793" stroke-width="1.5"></path>
-                            </svg>
-                        </div>
+                <div class="team-member text-center group [perspective:1000px]">
+                    <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  
+                      <!-- FRONT -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+                            <img src="" alt="Divya" class="w-full h-full object-cover" />
+                        </div>                          
+                        <h3 class="text-2xl font-bold text-[#E7C793]">Sheenie</h3>
+                        <p class="text-[#E7C793]/80 mt-1 text-sm">Design & Visual Communications</p>
+                      </div>
+                  
+                      <!-- BACK -->
+                      <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+                        <h4 class="font-semibold text-xl mb-3">Soft Eng</h4>
+                        <p class="text-base text-center">Obsessed with classical dance & UI design magic!</p>
+                      </div>
+                      
                     </div>
-                    <h3 class="text-xl font-bold">Sheenie</h3>
-                    <p class="text-[#E7C793]/80">Designs & Visual Communications</p>
                 </div>
             </div>
         </div>
