@@ -1,0 +1,152 @@
+{
+  "navigation": {
+    "brand": "Carleton Natyam",
+    "links": [
+      {"href": "#home", "text": "Home"},
+      {"href": "#about", "text": "About"},
+      {"href": "#events", "text": "Events"},
+      {"href": "#team", "text": "Team"},
+      {"href": "#join", "text": "Join Us"}
+    ]
+  },
+  "hero": {
+    "logo": "assets/logo-cuna.png",
+    "title": "Carleton Natyam",
+    "subtitle": "Celebrating the classical art of Bharatanatyam through rhythm, expression, and tradition",
+    "buttons": [
+      {"href": "#about", "text": "Discover More", "class": "btn-gold"},
+      {"href": "#join", "text": "Join Us", "class": "btn-outline"}
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "heading": "Our Story",
+        "paragraphs": [
+          "Carleton Natyam was founded in 2025 by a group of passionate students dedicated to celebrating and sharing the rich tradition of Bharatanatyam. Our club brings together dancers of all levels, from beginners to advanced practitioners, united by our love for this classical Indian dance form.",
+          "We strive to create a supportive community where members can learn, practice, and perform together while honoring the cultural heritage and artistic depth of Bharatanatyam. Through workshops, performances, and cultural events, we aim to promote awareness and appreciation of this beautiful art form on campus and beyond."
+        ]
+      },
+      {
+        "heading": "What is Bharatanatyam?",
+        "subsections": [
+          {
+            "title": "The Classical Dance of South India",
+            "paragraphs": [
+              "Bharatanatyam is one of the oldest classical dance forms originating from Tamil Nadu in South India. With a history spanning over 5000 years, it combines precise footwork (nritta), expressive storytelling (abhinaya), and symbolic hand gestures (mudras) to create a visually stunning and emotionally rich performance art.",
+              "The dance form is characterized by its fixed upper torso, bent legs, and elaborate footwork. Dancers tell stories through a complex language of gestures and expressions, often depicting mythological themes and spiritual concepts from Hindu texts.",
+              "Bharatanatyam performances are traditionally accompanied by Carnatic music, with rhythmic patterns set by the mridangam (drum) and melodic framework provided by vocals and instruments like the veena and flute."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "title": "Events & Workshops",
+    "description": "Join us for our upcoming events and workshops to experience the beauty of Bharatanatyam and connect with our community.",
+    "cards": [
+      {
+        "date": "TBA",
+        "title": "Annual Showcase: The Art of Bharatanatyam",
+        "description": "Join us for our annual showcase featuring performances by club members. Experience the beauty and grace of Bharatanatyam in this spectacular event.",
+        "location": "TBA",
+        "button": {"text": "RSVP", "class": "btn-outline"},
+        "url": "#"
+      },
+      {
+        "date": "TBA",
+        "title": "Beginner's Workshop: Introduction to Mudras",
+        "description": "Learn the fundamental hand gestures (mudras) used in Bharatanatyam storytelling. This workshop is perfect for beginners interested in exploring this classical dance form.",
+        "location": "TBA",
+        "button": {"text": "Register", "class": "btn-outline"},
+        "url": "#"
+      },
+      {
+        "date": "TBA",
+        "title": "Carleton Natyam Social Night",
+        "description": "--",
+        "location": "TBA",
+        "button": {"text": "RSVP", "class": "btn-outline"},
+        "url": "#"
+      }
+    ],
+    "viewAllButton": {"text": "View All Events", "class": "btn-gold"}
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "description": "Our dedicated team of dancers and organizers work together to bring the art of Bharatanatyam to the Carleton community.",
+    "members": [
+      {
+        "name": "Divya Vithiyatharan",
+        "role": "Co-President (Co-Founder) + Dance Instructor",
+        "image": "",
+        "backTitle": "Soft Eng",
+        "backDescription": "Obsessed with classical dance & UI design magic!"
+      },
+      {
+        "name": "Anjali Patel",
+        "role": "Co-President (Co-Founder) + Dance Instructor",
+        "image": "assets/1.jpg",
+        "backTitle": "Computer Science & Incoming MBA Candidate",
+        "backDescription": "Obsessed with classical dance & UI design magic!"
+      },
+      {
+        "name": "Anirudh",
+        "role": "VP Finance",
+        "image": "",
+        "backTitle": "Soft Eng",
+        "backDescription": "Obsessed with classical dance & UI design magic!"
+      },
+      {
+        "name": "Arun",
+        "role": "VP Events",
+        "image": "",
+        "backTitle": "Soft Eng",
+        "backDescription": "Obsessed with classical dance & UI design magic!"
+      },
+      {
+        "name": "Sheenie",
+        "role": "Design & Visual Communications",
+        "image": "",
+        "backTitle": "Soft Eng",
+        "backDescription": "Obsessed with classical dance & UI design magic!"
+      }
+    ]
+  },
+  "join": {
+    "title": "Join Us",
+    "description": "Become a part of our vibrant community and explore the beautiful art of Bharatanatyam. No prior experience necessary—all levels welcome!",
+    "connectWithUs": [
+      {
+        "platform": "Instagram",
+        "handle": "@carleton_natyam",
+        "url": "#"
+      },
+      {
+        "platform": "Discord",
+        "handle": "discord.gg/carletonnatyam",
+        "url": "https://discord.gg/aytDF3RN"
+      },
+      {
+        "platform": "Email",
+        "handle": "cunatyam@gmail.com",
+        "url": "mailto:cunatyam@gmail.com"
+      }
+    ],
+    "membership": {
+      "heading": "Become a Member",
+      "description": "Ready to join our community? Click below to fill out our membership form and start your Bharatanatyam journey with us!"
+    }
+  },
+  "footer": {
+    "brand": "Carleton Natyam",
+    "tagline": "Celebrating the art of Bharatanatyam since ...",
+    "copyright": "© 2025 Carleton Natyam. All rights reserved.",
+    "socials": [
+      {"name": "Instagram", "url": "#"},
+      {"name": "Discord", "url": "https://discord.gg/aytDF3RN"},
+      {"name": "Email", "url": "mailto:cunatyam@gmail.com"}
+    ]
+  }
+}
