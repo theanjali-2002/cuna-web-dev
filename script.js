@@ -6,88 +6,6 @@ menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
-// Membership form modal
-const membershipBtn = document.getElementById('membershipBtn');
-const membershipModal = document.getElementById('membershipModal');
-const closeModal = document.getElementById('closeModal');
-const membershipForm = document.getElementById('membershipForm');
-
-membershipBtn.addEventListener('click', () => {
-    membershipModal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-});
-
-closeModal.addEventListener('click', () => {
-    membershipModal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-});
-
-membershipModal.addEventListener('click', (e) => {
-    if (e.target === membershipModal) {
-        membershipModal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    }
-});
-
-membershipForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Simulate form submission
-    const submitBtn = membershipForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Submitting...';
-    
-    setTimeout(() => {
-        membershipForm.innerHTML = `
-            <div class="text-center py-6">
-                <svg class="w-16 h-16 text-[#E7C793] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <h3 class="text-xl font-bold mb-2">Thank You!</h3>
-                <p>Your application has been submitted successfully. We'll be in touch soon!</p>
-            </div>
-        `;
-        
-        setTimeout(() => {
-            membershipModal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-            
-            // Reset form for future use
-            setTimeout(() => {
-                membershipForm.innerHTML = `
-                    <div>
-                        <label for="name" class="block mb-2 text-sm font-medium">Full Name</label>
-                        <input type="text" id="name" class="w-full p-3 bg-[#19050C] border border-[#E7C793]/50 rounded-lg focus:outline-none focus:border-[#E7C793]" required>
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium">Email Address</label>
-                        <input type="email" id="email" class="w-full p-3 bg-[#19050C] border border-[#E7C793]/50 rounded-lg focus:outline-none focus:border-[#E7C793]" required>
-                    </div>
-                    
-                    <div>
-                        <label for="experience" class="block mb-2 text-sm font-medium">Dance Experience</label>
-                        <select id="experience" class="w-full p-3 bg-[#19050C] border border-[#E7C793]/50 rounded-lg focus:outline-none focus:border-[#E7C793]">
-                            <option value="beginner">Beginner (No Experience)</option>
-                            <option value="intermediate">Intermediate (1-3 Years)</option>
-                            <option value="advanced">Advanced (3+ Years)</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block mb-2 text-sm font-medium">Why do you want to join?</label>
-                        <textarea id="message" rows="3" class="w-full p-3 bg-[#19050C] border border-[#E7C793]/50 rounded-lg focus:outline-none focus:border-[#E7C793]"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-gold w-full py-3 rounded-full font-medium">Submit Application</button>
-                `;
-            }, 500);
-        }, 2000);
-    }, 1500);
-});
-
 // Active navigation highlighting
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -230,3 +148,107 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(animateFlower);
     }
 });
+
+
+//populating from JSON
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const res = await fetch('content.json');
+      const data = await res.json();
+  
+      loadHome(data.home);
+      loadTeam(data.team);
+      loadEvents(data.events);
+      loadAbout(data.about);
+  
+    } catch (err) {
+      console.error('Error loading content.json:', err);
+    }
+});
+
+// Homepage
+function loadHome(home) {
+    document.getElementById('main-title').textContent = home.title;
+    document.getElementById('subtitle').textContent = home.subtitle;
+}
+
+// Team
+function loadTeam(team) {
+    const teamContainer = document.getElementById('team-members');
+    teamContainer.innerHTML = '';
+  
+    team.forEach(member => {
+      const card = document.createElement('div');
+      card.className = 'team-member text-center group [perspective:1000px]';
+  
+      card.innerHTML = `
+        <div class="relative w-60 h-80 mx-auto transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          <!-- FRONT -->
+          <div class="absolute inset-0 [backface-visibility:hidden] bg-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+            <div class="w-40 h-40 mb-4 rounded-full overflow-hidden shadow-[0_0_25px_#E7C79355]">
+              <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-2xl font-bold text-[#E7C793]">${member.name}</h3>
+            <p class="text-[#E7C793]/80 mt-1 text-sm">${member.role}</p>
+          </div>
+          <!-- BACK -->
+          <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#E7C793] text-[#19050C] rounded-xl flex flex-col items-center justify-center p-6 shadow-[0_0_30px_#E7C79333] border border-[#E7C79344]">
+            <h4 class="font-semibold text-xl mb-3">${member.program}</h4>
+            <p class="text-base text-center">${member.bio}</p>
+          </div>
+        </div>
+      `;
+  
+      teamContainer.appendChild(card);
+    });
+}
+  
+// Events
+function loadEvents(events) {
+    const eventsContainer = document.getElementById('events-container');
+    eventsContainer.innerHTML = '';
+  
+    events.forEach(event => {
+      const card = document.createElement('div');
+      card.className = 'p-6 rounded-xl shadow-lg border border-[#E7C79344] bg-[#19050C]';
+  
+      card.innerHTML = `
+        <div class="mb-4 overflow-hidden rounded-xl h-56">
+          <img src="${event.image}" alt="${event.title}" class="w-full h-full object-cover rounded-xl" />
+        </div>
+        <h3 class="text-2xl font-bold text-[#E7C793] mb-2">${event.title}</h3>
+        <p class="text-sm text-[#E7C793]/70 mb-1"><strong>Date:</strong> ${event.date}</p>
+        <p class="text-sm text-[#E7C793]/70 mb-1"><strong>Location:</strong> ${event.location}</p>
+        <p class="text-sm text-[#E7C793]/80 mb-4">${event.description}</p>
+        <a href="${event.buttonURL}" target="_blank" class="inline-block mt-2 px-4 py-2 bg-[#E7C793] text-[#19050C] font-medium rounded-full shadow-md hover:bg-[#d6b873] transition">
+          ${event.buttonText}
+        </a>
+      `;
+  
+      eventsContainer.appendChild(card);
+    });
+}
+  
+// About
+function loadAbout(about) {
+    const storyContainer = document.getElementById('story-text');
+    storyContainer.innerHTML = `<h3 class="text-2xl font-semibold mb-4">${about.storyTitle}</h3>`;
+    about.storyParagraphs.forEach(p => {
+      const para = document.createElement('p');
+      para.className = 'mb-6';
+      para.textContent = p;
+      storyContainer.appendChild(para);
+    });
+  
+    const bTitle = document.getElementById('bharatanatyam-title');
+    bTitle.textContent = about.bharatanatyamTitle;
+  
+    const bContent = document.getElementById('bharatanatyam-text');
+    bContent.innerHTML = `<h3 class="text-2xl font-semibold mb-4">${about.bharatanatyamSubtitle}</h3>`;
+    about.bharatanatyamParagraphs.forEach(p => {
+      const para = document.createElement('p');
+      para.className = 'mb-6';
+      para.textContent = p;
+      bContent.appendChild(para);
+    });
+}
