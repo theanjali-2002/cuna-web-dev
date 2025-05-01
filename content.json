@@ -50,37 +50,37 @@
     {
       "name": "Divya Vithiyatharan",
       "role": "Co-President (Co-Founder) + Dance Instructor",
-      "image": "",
-      "program": "Soft Eng",
-      "bio": "Obsessed with classical dance & UI design magic!"
+      "image": "https://res.cloudinary.com/dwehfrhlq/image/upload/v1746106784/IMG_1349_-_Divya_Vithiyatharan_f1lv9n.jpg",
+      "program": "Software Engineering",
+      "bio": "I have danced and performed for 12 years."
     },
     {
       "name": "Anjali Patel",
       "role": "Co-President (Co-Founder) + Dance Instructor",
-      "image": "assets/1.jpg",
+      "image": "https://res.cloudinary.com/dwehfrhlq/image/upload/v1746107194/IMG-20190521-WA0009m_anw42f.jpg",
       "program": "Computer Science & Incoming MBA Candidate",
-      "bio": "Obsessed with classical dance & UI design magic!"
+      "bio": "I earned a B.A. in Bharatanatyam (Visharad) after 8 years of study, spent 3 years as a TA, and have been involved with 15+ other community orgs :)"
     },
     {
-      "name": "Anirudh",
+      "name": "Anirudh Mahesh",
       "role": "VP Finance",
-      "image": "",
-      "program": "Soft Eng",
-      "bio": "Obsessed with classical dance & UI design magic!"
+      "image": "https://res.cloudinary.com/dwehfrhlq/image/upload/v1746106785/PXL_20240428_195600860_-_Anirudh_Mahesh_gxv2rz.jpg",
+      "program": "Computer Science",
+      "bio": "I switched programs 4 times!"
     },
     {
-      "name": "Arun",
-      "role": "VP Events",
-      "image": "",
-      "program": "Soft Eng",
-      "bio": "Obsessed with classical dance & UI design magic!"
+      "name": "Arunteja Kuchibhatla",
+      "role": "VP Communications",
+      "image": "https://res.cloudinary.com/dwehfrhlq/image/upload/v1746107201/PXL_20250406_221114991.PORTRAIT_-Arun_Kuchibhatla_namiko.jpg",
+      "program": "Computer Science",
+      "bio": "Involved in an environmental non-profit called Conscious Planet, with the aim to prevent the desertification of soil!"
     },
     {
-      "name": "Sheenie",
+      "name": "Sheenie Chan",
       "role": "Design & Visual Communications",
-      "image": "",
-      "program": "Soft Eng",
-      "bio": "Obsessed with classical dance & UI design magic!"
+      "image": "https://res.cloudinary.com/dwehfrhlq/image/upload/v1746106785/Screenshot_2025-05-01_at_12.11.37_AM_-_Sheenie_Chan_lloshx.png",
+      "program": "BIT IMD (Interactive Multimedia and Design)",
+      "bio": "I love being creative and artistic through creating traditional and digital art. While I don’t dance, I find Bharatanatyam incredibly inspiring and beautiful. "
     }
   ]
 }

@@ -43,6 +43,10 @@ Mathematics concepts used:
 
 💡 This animation was designed to reflect the graceful and dynamic essence of Bharatanatyam while giving the site a lively and soft ambiance.
 
+## Image Hosting
+
+To ensure privacy and prevent exposing team member images on the public GitHub repository, we use [Cloudinary](https://cloudinary.com/) for hosting images securely. All image URLs used in the `content.json` file point to secure Cloudinary assets.
+
 ## Setup and Usage
 
 1. Clone or download the repository.

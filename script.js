@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const flowerCount = 120; // Increased number of flowers
     
     // SVG for jasmine flower (hand-drawn style with glow effect)
+    // for only traces use: <g fill="none" stroke="white" stroke-width="1.5" opacity="0.99">
     const jasmineFlowerSVG = `
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
